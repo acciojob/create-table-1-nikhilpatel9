@@ -1,15 +1,9 @@
 function insert_Row() {
-    let tb = document.getElementById("sampleTable");
-    let newRow = document.createElement("tr");
-    let cell1 = document.createElement("td");
-    let cell2 = document.createElement("td");
-    
-    cell1.textContent = "New Cell1";
-    cell2.textContent = "New Cell2";
-    
-    newRow.appendChild(cell1);
-    newRow.appendChild(cell2);
-    
-    // Insert at the beginning
-    tb.insertBefore(newRow, tb.firstChild);
+    let table = document.getElementById("sampleTable");
+    table.insertAdjacentHTML('afterbegin', `
+        <tr>
+            <td>New Cell1</td>
+            <td>New Cell2</td>
+        </tr>
+    `);
 }
