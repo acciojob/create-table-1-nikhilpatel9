@@ -4,6 +4,6 @@ function insert_Row() {
         <tr>
             <td>New Cell1</td>
             <td>New Cell2</td>
-        </tr>
+        </table>
     `);
 }
